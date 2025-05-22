@@ -1,0 +1,631 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+  }
+
+  /* Floating Navbar */
+  .navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .navbar:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+  }
+
+  .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #007BFF;
+  }
+
+  /* Blue Box */
+  .blue-box {
+    background: #007BFF;
+    padding: 40px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    width: 90vw;
+    margin-top: 100px;
+  }
+
+  /* Card Styling */
+  .card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: scale(1.05) rotateZ(1deg);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .blue-box {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .blue-box {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .Title {
+    background-color: rgb(63, 63, 63);
+    height: 50px;
+    border-radius: 25px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: auto;
+}
+
+
+.Main {
+    background-color: #068cfa;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+}
+
+
+.Tss {
+    background-color: #068cfa;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    height: 380px;
+    width: 650px;
+    text-decoration: underline;
+}
+
+.Fsap {
+    border-radius: 20px;
+    height: 250px;
+    margin: auto;
+}
+
+.Fe {
+    text-align: center;
+}
+
+.Ss {
+    background-color: #068cfa;
+    height: 425px;
+    width: 600px;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+.CS {
+    background-color: #068cfa;
+    height: 630px;
+    width: 850px;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    text-decoration: underline;
+}
+
+.CSp {
+    border-radius: 30px;
+    height: 250px;
+}
+
+
+/*Pillar of Justice Section*/
+
+.Ju {
+    background-color: #3f3f3f;
+    height: 100px;
+    border-radius: 35px;
+    width: 700px;
+    margin: auto;
+    text-align: left;
+    padding: auto;
+}
+
+.Ju2 {
+    background-color: #3f3f3f;
+    height: 650px;
+    border-radius: 35px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Ju3 {
+        background-color: #3f3f3f;
+        height: 350px;
+        border-radius: 35px;
+        width: 700px;
+        margin: auto;
+        text-align: left;
+        padding: auto;
+        text-align: center;
+}
+
+.Jup {
+    border-radius: 20px;
+    width: 350px;
+    margin: auto;
+}
+
+/*End Pillar of Justice Section*/
+
+
+
+/*Pillar of Temperance Section*/
+
+.Tup {
+    border-radius: 20px;
+    width: 350px;
+    margin: auto
+}
+
+.Tu {
+    background-color: #3f3f3f;
+    height: 100px;
+    border-radius: 35px;
+    width: 700px;
+    margin: auto;
+    text-align: left;
+    padding: auto;
+}
+
+.Tu2 {
+    background-color: #3f3f3f;
+    height: 650px;
+    border-radius: 35px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Tu3 {
+        background-color: #3f3f3f;
+        height: 190px;
+        border-radius: 35px;
+        width: 700px;
+        margin: auto;
+        text-align: left;
+        padding: auto;
+        text-align: center;
+}
+
+/*End Pillar of Temperance Section*/
+
+
+/* Pillar of Diligance Section */
+
+.Dup {
+    border-radius: 20px;
+    width: 350px;
+    margin: auto
+}
+
+.Du {
+    background-color: #3f3f3f;
+    height: 100px;
+    border-radius: 35px;
+    width: 700px;
+    margin: auto;
+    text-align: left;
+    padding: auto;
+}
+
+.Du2 {
+    background-color: #3f3f3f;
+    height: 480px;
+    border-radius: 35px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Du3 {
+        background-color: #3f3f3f;
+        height: 250px;
+        border-radius: 35px;
+        width: 700px;
+        margin: auto;
+        text-align: left;
+        padding: auto;
+        text-align: center;
+}
+
+/*End Pillar of Diligance Section*/
+
+
+/*Pillar of Charity Section*/
+
+.Cup {
+    border-radius: 20px;
+    width: 350px;
+    margin: auto;
+}
+
+.Cu {
+    background-color: #3f3f3f;
+    height: 100px;
+    border-radius: 35px;
+    width: 700px;
+    margin: auto;
+    text-align: left;
+    padding: auto;
+}
+
+.Cu2 {
+    background-color: #3f3f3f;
+    height: 590px;
+    border-radius: 35px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Cu3 {
+        background-color: #3f3f3f;
+        height: 250px;
+        border-radius: 35px;
+        width: 700px;
+        margin: auto;
+        text-align: left;
+        padding: auto;
+        text-align: center;
+}
+
+/*End Pillar of Charity Section*/
+
+
+/*Pillar of Honor Section*/
+
+.Hup {
+    border-radius: 20px;
+    width: 350px;
+    margin: auto
+}
+
+.Hu {
+    background-color: #3f3f3f;
+    height: 100px;
+    border-radius: 35px;
+    width: 700px;
+    margin: auto;
+    text-align: left;
+    padding: auto;
+}
+
+.Hu2 {
+    background-color: #3f3f3f;
+    height: 590px;
+    border-radius: 35px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Hu3 {
+        background-color: #3f3f3f;
+        height: 470px;
+        border-radius: 35px;
+        width: 700px;
+        margin: auto;
+        text-align: left;
+        padding: auto;
+        text-align: center;
+}
+
+/*End Pillar of Honor Section*/
+
+
+/*Pillar of Persistence Section*/
+
+.Pup {
+    border-radius: 20px;
+    width: 350px;
+    margin: auto
+}
+
+.Pu {
+    background-color: #3f3f3f;
+    height: 100px;
+    border-radius: 35px;
+    width: 700px;
+    margin: auto;
+    text-align: left;
+    padding: auto;
+}
+
+.Pu2 {
+    background-color: #3f3f3f;
+    height: 590px;
+    border-radius: 35px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Pu3 {
+        background-color: #3f3f3f;
+        height: 390px;
+        border-radius: 35px;
+        width: 700px;
+        margin: auto;
+        text-align: left;
+        padding: auto;
+        text-align: center;
+}
+
+/*End Pillar of Persistence Section*/
+
+
+/*Stratos Unit Zachariah*/
+
+.Zup {
+    border-radius: 20px;
+    width: 350px;
+    margin: auto
+}
+
+.Zu {
+    background-color: #3f3f3f;
+    height: 100px;
+    border-radius: 35px;
+    width: 700px;
+    margin: auto;
+    text-align: left;
+    padding: auto;
+}
+
+.Zu2 {
+    background-color: #3f3f3f;
+    height: 590px;
+    border-radius: 35px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Zu3 {
+        background-color: #3f3f3f;
+        height: 360px;
+        border-radius: 35px;
+        width: 700px;
+        margin: auto;
+        text-align: left;
+        padding: auto;
+        text-align: center;
+}
+
+/*End Stratos Unit Zachariah*/
+
+
+/*Stratos Unit Senya*/
+
+.Sup {
+    border-radius: 20px;
+    width: 350px;
+    margin: auto
+}
+
+.Su {
+    background-color: #3f3f3f;
+    height: 100px;
+    border-radius: 35px;
+    width: 700px;
+    margin: auto;
+    text-align: left;
+    padding: auto;
+}
+
+.Su2 {
+    background-color: #3f3f3f;
+    height: 650px;
+    border-radius: 35px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Su3 {
+        background-color: #3f3f3f;
+        height: 300px;
+        border-radius: 35px;
+        width: 700px;
+        margin: auto;
+        text-align: left;
+        padding: auto;
+        text-align: center;
+}
+
+/*End section Stratos Unit Senya*/
+
+/*Serphfall (Team) Section*/
+
+.St {
+    background-color: #3f3f3f;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    width: 450px;
+    height: 400px;
+    text-decoration: underline;
+}
+
+.Stp {
+    border-radius: 20px;
+    height: 300px;
+}
+
+.Sm {
+    background-color: #3f3f3f;
+    text-align: center;
+    border-radius: 20px;
+    height: 150px;
+}
+
+.Smr {
+    background-color: #3f3f3f;
+    text-align: center;
+    border-radius: 20px;
+    height: 160px;
+    width: 250px;
+    margin: auto;
+}
+
+.Slr {
+    background-color: #3f3f3f;
+    text-align: center;
+    border-radius: 20px;
+    height: 200px;
+    margin: auto;
+}
+
+/*End Serphfall (Team) Section*/
+
+
+/*Stratos Unit (Team) Section*/
+
+.Ste {
+    background-color: #3f3f3f;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    width: 450px;
+    height: 400px;
+    text-decoration: underline;
+}
+
+.Stpe {
+    border-radius: 20px;
+    height: 300px;
+}
+
+.Stm {
+    background-color: #3f3f3f;
+    text-align: center;
+    border-radius: 20px;
+    height: 120px;
+}
+
+.Smre {
+    background-color: #3f3f3f;
+    text-align: center;
+    border-radius: 20px;
+    height: 160px;
+    width: 250px;
+    margin: auto;
+}
+
+.Slre {
+    background-color: #3f3f3f;
+    text-align: center;
+    border-radius: 20px;
+    height: 150px;
+    margin: auto;
+}
+
+/*End Stratos Unit (Team) Section*/
+
+/* Start of Pillar of Justice */
+.sas  {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+    padding: 40px;
+}
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+
+  .character-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .character-header img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+  }
+
+  .bio {
+    margin-top: 30px;
+    line-height: 1.6;
+  }
+
+  .back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-decoration: none;
+  }
+
+  .back-link:hover {
+    text-decoration: underline;
+  }
