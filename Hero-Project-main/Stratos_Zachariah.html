@@ -3,44 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="Hero.css">
-  <title>Pillar of Justice</title>
+  <title>Zachariah</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .character-header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .character-header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      margin-top: 30px;
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Floating Navbar */
+  .navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .navbar:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+  }
+
+  .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #007BFF;
+  }
+
+  </style>
 
 </head>
 <body class="sas">
+
+   <!-- Floating Navbar -->
+   <div class="navbar">
+    <a href="Hero Project.html">Home</a>
+    <a href="Characters.html">Character</a>
+    <a href="Teams.html">Teams</a>
+  </div>
+  
   <a class="back-link" href="Characters.html">&larr; Back to Characters</a>
 
   <div class="container">
     <div class="character-header">
-      <img src="Images/Stratos Unit Zachariah.png" alt="Zachariah">
+      <img src="Images/Stratos Unit Zachariah.png" alt="Pillar of Zachariah">
       <div>
-        <h1>Senya</h1>
-        <p><strong>Role:</strong> Stratos Operative​ </p>
-        <p><strong>Origin:</strong> America </p>
-        <p><strong>Traits:</strong>  </p>
+        <h1>Zachariah</h1>
+        <p><strong>Role:</strong> Stratos Recruit</p>
+        <p><strong>Origin:</strong> </p>
+        <p><strong>Motivate:</strong> </p>
       </div>
     </div>
 
     <div class="bio">
       <h2>Biography</h2>
-      <p>Senya was born into a renown and rich family. He was a prodigy since birth, Cold to everyone, and never had trouble getting anything. In college he decided he wanted to join the Military, Serving 4 years in the Army before moving over to Stratos Unit. Once he passed the entrance tests and Physical Evaluations, he was granted CRX-42 to see if he was compatible with it. 
-        When he gained his powers he served stratos unit for about a year before being assigned into a Group with Zachariah, Who he did not get along with all to well. Senya had a Grudge with Zachariah since he scored higher than him on the physical evualuation.​
-        </p>
+      <p>Zachariah was always the responsible type, being a big brother of two little siblings honed him into the overly cautious and calculated person he is. He decided to join the Air force after high school, wanting to serve his country and protect those who lived in it. After 5 years in the Air force, He heard of a branch called Stratos unit, he decided to apply for stratos unit. The entrance exams and training camps were gruesome to him, but he kept the image of his siblings in his mind, motivating him. Once the final day for camp was here, The scores of the physical evualtions and iq tests were posted, he scored #1 on the Physical and #7 on the iq tests, these scores allowed him to get a hold of CRX-42. Ultimately, he was compatible with CRX-42 and after a year of serving stratos unit he was put into a group called Team Delta with Senya and a veteran that served stratos unit for 8 years.​</p>
 
       <h2>Powers</h2>
-      <p>The hero can absorb kinetic energy from impacts or movement and store it for later use. 
-        They could absorb the force of an enemy's punch and redirect it as a devastating attack, 
-        or absorb energy from their surroundings (like falling debris or a speeding car) to enhance their own speed or strength
-       ​</p>
+      <p>Event Horizon - The user can generate a localized “event horizon” - a boundary in space beyond which nothing, not even light, can escape. This manifests as a dark, spherical zone around the user or at a targeted location. Anything crossing this zone experiences extreme gravitational distortion, time dilation, or is pulled into a pocket dimension or singularity.</p>
       
       <h2>Weakness</h2>
-      <p>The hero is vulnerable to being overwhelmed if they absorb too much energy at once. 
-        There’s a risk of losing control, and if they don’t release the stored energy periodically, it could become dangerous for both them and their surroundings</p>
+      <p>Control Limitations: Creating an event horizon is extremely taxing; prolonged use may harm the user. </p>
 
       <h2>Factions</h2>
       <ul>
-        <li>Allies: Stratos Unit​</li>
-        <li>Rival: Seraphfall​</li>
+        <li>Allies: Stratos Unit</li>
+        <li>Rival: Seraphfall</li>
       </ul>
     </div>
   </div>
