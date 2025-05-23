@@ -3,47 +3,129 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="Hero.css">
-  <title>Pillar of Justice</title>
+  <title>Pillar of Diligance</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .character-header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .character-header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      margin-top: 30px;
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Floating Navbar */
+  .navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .navbar:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+  }
+
+  .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #007BFF;
+  }
+
+  </style>
 
 </head>
 <body class="sas">
+
+   <!-- Floating Navbar -->
+   <div class="navbar">
+    <a href="Hero Project.html">Home</a>
+    <a href="Characters.html">Character</a>
+    <a href="Teams.html">Teams</a>
+  </div>
+  
   <a class="back-link" href="Characters.html">&larr; Back to Characters</a>
 
   <div class="container">
     <div class="character-header">
-      <img src="Images/Pillar of Diligance.png" alt="Pillar of Diligence">
+      <img src="Images/Pillar of Diligance.png" alt="Pillar of Diligance">
       <div>
         <h1>Rin</h1>
-        <p><strong>Role:</strong> Pillar Of Diligence </p>
-        <p><strong>Origin:</strong> Korea </p>
-        <p><strong>Traits:</strong> Always shows Hard work and Dedication for the task at handS </p>
+        <p><strong>Role:</strong> Pillar Of Diligance </p>
+        <p><strong>Origin:</strong> </p>
+        <p><strong>Motivate:</strong> </p>
       </div>
     </div>
 
     <div class="bio">
       <h2>Biography</h2>
-      <p>​The Pillar of Diligence, Rin was a intelligent girl, at the top of her classes in everything. 
-        But one day, When walking along the street, she saw someone preaching about how "true equality lies in everyone having powers", she walked up to this person, and the Preacher Handed her a card with a time and location, 
-        She was now interested about this "equality" So she made her way to this gathering. Rin even called one of her close friends since childhood, Akane to go with her. 
-        Once they made it to the gathering Rin and Akane both Listened Closely to the words of the preachers, they saw the same logo everywhere that said "Seraphfall." 
-        One of the preachers called Rin over, handing her CRX-42, telling her to inject herself with said substance, all eyes were on her, and folding to peer pressure, she injected the serum, her body felt like it was on fire but ultimately, she was compatible. 
-        Everyone Marveled her she felt like she belonged, when the Gathering ended she decided to sign up for seraph fall, earning her position as a Pillar.
-        </p>
+      <p>The Pillar of Diligence, Rin was a intelligent girl, at the top of her classes in everything. But one day, When walking along the street, she saw someone preaching about how "true equality lies in everyone having powers", she walked up to this person, and the Preacher Handed her a card with a time and location, She was now interested about this "equality" So she made her way to this gathering. Rin even called one of her close friends since childhood, Akane to go with her. Once they made it to the gathering Rin and Akane both Listened Closely to the words of the preachers, they saw the same logo everywhere that said "Seraphfall." One of the preachers called Rin over, handing her CRX-42, telling her to inject herself with said substance, all eyes were on her, and folding to peer pressure, she injected the serum, her body felt like it was on fire but ultimately, she was compatible. Everyone Marveled her she felt like she belonged, when the Gathering ended she decided to sign up for seraph fall, earning her position as a Pillar.</p>
 
       <h2>Powers</h2>
-      <p> Every discrete combat action (attack, parry, dodge, feint) “checks off” an internal task. 
-        For each task checked, they gain a small stack of Resolve. Stacks last 60 seconds and can accumulate up to 20. 
-        Each Stack of Resolve enhances the villains strength in the task that they performed
-       ​</p>
+      <p>Every discrete combat action (attack, parry, dodge, feint) “checks off” an internal task. For each task checked, they gain a small stack of Resolve. Stacks last 60 seconds and can accumulate up to 20. Each Stack of Resolve enhances the villains strength in the task that they performed.</p>
       
       <h2>Weakness</h2>
-      <p>Slow Start on gaining stacks, Can get her Stacks stalled out. Missing Attacks don’t grant stacks.</p>
+      <p>Slow Start on gaining stacks, Can get her Stacks stalled out. Missing Attacks don't grant stacks.</p>
 
       <h2>Factions</h2>
       <ul>
-        <li>Allies: Seraphfall​</li>
-        <li>Rival: Stratos Unit​</li>
+        <li>Allies: Seraphfall</li>
+        <li>Rival: Stratos Unit</li>
       </ul>
     </div>
   </div>
