@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Face-Off</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #222;
+      text-align: center;
+    }
+
+    .teams-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .team-link {
+      text-decoration: none;
+      flex: 1 1 48%;
+      transition: transform 0.3s ease;
+    }
+
+    .team-link:hover {
+      transform: translateY(-8px);
+    }
+
+    .team-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+    }
+
+    .team-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .team-info {
+      padding: 25px;
+      text-align: center;
+    }
+
+    .team-name {
+      font-size: 2rem;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    .team-description {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .teams-wrapper {
+        flex-direction: column;
+      }
+
+      .team-link {
+        flex: 1 1 100%;
+      }
+    }
+
+    .navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .navbar:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+  }
+
+  .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #007BFF;
+  }
+  
+  </style>
+</head>
+<body>
+
+    <!-- Floating Navbar -->
+  <div class="navbar">
+    <a href="Hero Project.html">Home</a>
+    <a href="Characters.html">Character</a>
+    <a href="Teams.html">Teams</a>
+  </div>
+
+  <h1>Teams!</h1>
+
+  <div class="teams-wrapper" id="teams-wrapper">
+  
+  </div>
+
+  <script>
+    const teams = [
+      {
+        name: "Seraphfall",
+        description: "Seraphfall is full of people devoted to their goal of making a fully super powered world.",
+        image: "images/Seraphfall.png", 
+        link: "Seraphfall (Team).html"
+      },
+      {
+        name: "Stratos Unit",
+        description: "Serves Directly Under the US Military, Tasked with apprehending or eliminating superpowered creatures/humans. Highly Confidential In their work..",
+        image: "images/Stratos Unit.png", 
+        link: "Stratos Unit (Team).html"
+      }
+    ];
+
+    const wrapper = document.getElementById('teams-wrapper');
+
+    teams.forEach(team => {
+      const link = document.createElement('a');
+      link.className = 'team-link';
+      link.href = team.link;
+
+      link.innerHTML = `
+        <div class="team-card">
+          <img src="${team.image}" class="team-image" alt="${team.name}">
+          <div class="team-info">
+            <h2 class="team-name">${team.name}</h2>
+            <p class="team-description">${team.description}</p>
+          </div>
+        </div>
+      `;
+
+      wrapper.appendChild(link);
+    });
+  </script>
+
+</body>
+</html>
 
