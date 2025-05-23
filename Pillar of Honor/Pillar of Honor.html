@@ -1,41 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="Hero.css">
-    <title>Hero Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pillar of Honor</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .character-header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .character-header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .bio {
+      margin-top: 30px;
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Floating Navbar */
+  .navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .navbar:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+  }
+
+  .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar a:hover {
+    color: #007BFF;
+  }
+
+  </style>
+
 </head>
 
-<body>
-        <!-- Floating Navbar -->
-        <div class="navbar">
-            <a href="Hero Project.html">Home</a>
-            <a href="Characters.html">Character</a>
-            <a href="#">Teams</a>
-          </div>
-        
-    
-    <div class="Title">
-        <h1>Pillar Of Honor</h1>
+<body class="sas">
+
+   <!-- Floating Navbar -->
+   <div class="navbar">
+    <a href="Hero Project.html">Home</a>
+    <a href="Characters.html">Character</a>
+    <a href="Teams.html">Teams</a>
+  </div>
+  
+  <a class="back-link" href="Characters.html">&larr; Back to Characters</a>
+
+  <div class="container">
+    <div class="character-header">
+      <img src="Images/Pillar of Honor.png" alt="Pillar of Diligance">
+      <div>
+        <h1>Amari</h1>
+        <p><strong>Role:</strong> Pillar Of Honor </p>
+        <p><strong>Origin:</strong> </p>
+        <p><strong>Motivate:</strong> </p>
+      </div>
     </div>
-    <br>
-    <div class="Hu2">
-        <h1></h1>
-        <img class="Hup" src="Images/Pillar of Honor.png" alt="Pillar Of Honor">
+
+    <div class="bio">
+      <h2>Biography</h2>
+      <p>The Pillar of Honor, Amari, was at the park one day, observing the how the birds flocked together he saw one particular bird being singled out by the group, his moral code made him stand up for the bird, making the other birds retreat away. His daydreaming was interrupted by a mutant transformed by raw Feralum being spread nearby, he saw the mutant lash tendrils at everybody. Amari saw his life flash before his eyes once the mutant turned its attention towards him, a Tendril whipped Amari and sent him flying into the side of a building, Amari was fading. As the Mutant was going to finish Amari off, The pillar of Persistence, Hiro stepped in, locked into combat with the Mutant. Watching the fight, Amari felt helpless, he hated relying on others for help. Once the fight ended, Amari apporached Hiro, Seeking Strength like his, Hiro chuckled, handing Amari a business card that allowed Amari to get in contact with Seraphfall and join their cause in exchange for that same power hiro held.</p>
+
+      <h2>Powers</h2>
+      <p>The villain can bind anyone—hero, civilian, or rival—into an unbreakable “honor pact.” Once someone hears and accepts the villain's sworn challenge or demand (even subconsciously), they become subject to the Pact of Honor. The bound target must follow any direct order that doesn't blatantly self-destruct, If they try to circumvent the pact they suffer a backlash of pain, incapacitation, or a crippling curse of guilt that grows until they confessThe pact endures until the villain willingly releases the target, the target honors every single clause without fail, or the villain's own “honor” code is publicly shattered.</p>
+      
+      <h2>Weakness</h2>
+      <p> The villain themself must abide by their own rigid code—if they break any sworn clause, all pacts collapse instantly, freeing every bound target and turning the backlash on the villain. The power hinges on precise language. If the oath is ambiguous or contains loopholes, clever opponents can exploit them to break free.</p>
+
+      <h2>Factions</h2>
+      <ul>
+        <li>Allies: Seraphfall</li>
+        <li>Rival: Stratos Unit</li>
+      </ul>
     </div>
-    <br>
-    <div class="Hu3">
-        <h1>Ability:Oathbound Dominion</h1>
-        <p><h2>Power: The villain can bind anyone—hero, civilian, or rival—into an unbreakable “honor pact.” Once someone hears and accepts the villain’s sworn challenge or demand (even subconsciously), they become subject to the Pact of Honor. The bound target must follow any direct order that doesn’t blatantly self-destruct, If they try to circumvent the pact they suffer a backlash of pain, incapacitation, or a crippling curse of guilt that grows until they confessThe pact endures until the villain willingly releases the target, the target honors every single clause without fail, or the villain’s own “honor” code is publicly shattered.
-            Weakness: The villain themself must abide by their own rigid code—if they break any sworn clause, all pacts collapse instantly, freeing every bound target and turning the backlash on the villain. The power hinges on precise language. If the oath is ambiguous or contains loopholes, clever opponents can exploit them to break free.</h2>
-        </p>
-    </div>
-    <br>
-    <div class="Hu">
-        <h1 style="text-align: center;">Character Summary</h1>
-        <p></p>
-    </div>
-    <footer class="Fe">&copy;CRX 2025</footer>
+  </div>
 </body>
-        </html>
+</html>
